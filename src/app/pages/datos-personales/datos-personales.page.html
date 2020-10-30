@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>DATOS PERSONALES</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding">
+    <form novalidate>
+      <ion-list>
+
+        <ion-item>
+          <ion-label position="stacked" color="primary">Nombre</ion-label>
+          <ion-input [(ngModel)]="login.nombre" [attr.maxlength]="20" name="Nombre" type="text" required>
+          Antonio Funez Lopez
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked" color="primary">Localidad</ion-label>
+          <ion-input [(ngModel)]="login.localidad" [attr.maxlength]="12" name="Localidad" type="text" required>
+          Bolaños de Calatrava
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked" color="primary">Estudios</ion-label>
+          <ion-input [(ngModel)]="login.estudios" [attr.maxlength]="10" name="Estudios" type="text" required>
+          Desarrollo de aplicaciones informaticas
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked" color="primary">e-mail</ion-label>
+          <ion-input [(ngModel)]="login.correo" [attr.maxlength]="15" name="e-mail" type="text" required>
+          afl1989antonio@gmail.com
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked" color="primary">contraseña</ion-label>
+          <ion-input [(ngModel)]="login.contrasena" [attr.maxlength]="8" name="contraseña" type="password" required>
+          123456789
+          </ion-input>
+        </ion-item>
+
+      </ion-list>
+    </form>
+  </div>
+
+</ion-content>
